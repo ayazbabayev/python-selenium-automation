@@ -14,3 +14,5 @@ def five_links_verification(context, expected_count):
     expected_count = int(expected_count)
     five_links_count = len(context.driver.find_elements(*five_links))
     assert five_links_count == expected_count, f'Expected {expected_count} but turned {five_links_count}'
+
+

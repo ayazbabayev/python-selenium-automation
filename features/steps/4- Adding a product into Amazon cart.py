@@ -31,3 +31,5 @@ def user_clicks_amazon_cart_icon(context):
 def verifying_product_in_the_cart(context, search_word):
     expected_word = context.driver.find_element(By.CSS_SELECTOR, "span.a-truncate-cut").text
     assert expected_word == search_word, f'expected and search word results not matching.'
+
+

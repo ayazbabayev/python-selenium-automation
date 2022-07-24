@@ -6,3 +6,4 @@ Feature: Amazon Bestsellers page - 5 links verification
     Given User opens Amazon page (No Sign In)
     When User clicks on Bestsellers page
     Then Verify that 5 links are present
+

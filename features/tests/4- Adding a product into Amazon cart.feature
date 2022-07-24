@@ -8,3 +8,5 @@ Feature: Adding a product into Amazon cart
     And User adds product into cart
     And User clicks Amazon cart icon
     Then Cart shows Al Mokha: The World's First Coffee. Yemen Medium Roast (whole bean) in the cart
+
+
