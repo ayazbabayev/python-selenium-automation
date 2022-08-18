@@ -1,6 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-
+from app.application import Application
 
 def browser_init(context):
     """
@@ -13,6 +13,9 @@ def browser_init(context):
     context.driver.maximize_window()
     context.driver.implicitly_wait(4)
     context.driver.wait = WebDriverWait(context.driver, 12)
+    context.app = Application(context.driver)
+    # (7) WE IMPORTED APPLICATION in line 3 & WE ADDED IT INSIDE BEHAVE CONTEXT above.
+    # Context app will call our application.
 
 def before_scenario(context, scenario):
     print('\nStarted scenario: ', scenario.name)
