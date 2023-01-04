@@ -1,4 +1,4 @@
-# Created by ababa at 8/8/2022
+# Created by ababa at 8/8/2021
 Feature: Switching Windows in Amazon: T&C - Privacy Notice - T&C
 
   Scenario: User can open and close Amazon Privacy Notice

@@ -1,4 +1,4 @@
-# Created by ababa at 8/6/2022
+# Created by ababa at 8/6/2021
 Feature: Amazon Sign-In button: Visibility & Clickability
 
   Scenario: User can see & click on Amazon sign-in button

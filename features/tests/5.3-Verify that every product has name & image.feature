@@ -1,4 +1,4 @@
-# Created by ababa at 8/6/2022
+# Created by ababa at 8/6/2021
 Feature: Search results are displayed.
 
   Scenario: User can see every that product has name & image

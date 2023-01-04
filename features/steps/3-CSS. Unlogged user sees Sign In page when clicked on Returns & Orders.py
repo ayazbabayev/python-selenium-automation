@@ -13,7 +13,6 @@ def open_amazon_nosignin(context):
 def click_returns_and_orders(context):
     context.driver.find_element(By.CSS_SELECTOR, '#nav-orders').click()
 
-
 @then('User sees Sign-In page')
 def verify_sign_in_opened(context):
     expected_result = "Sign-In"

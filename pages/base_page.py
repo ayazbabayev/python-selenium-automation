@@ -1,6 +1,6 @@
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+from support.logger import logger
 
 class Page:
 
@@ -11,6 +11,8 @@ class Page:
 
     def open_url(self, end_url=''):
         self.driver.get(f'{self.base_url}{end_url}')
+        # track which urls we open and make a record:
+        logger.info(f'Open URL {self.base_url}{end_url}.......')
 
     def find_element(self, *locator):
         return self.driver.find_element(*locator)
@@ -23,8 +25,12 @@ class Page:
 
     def input_text(self, text, *locator):
         e = self.driver.find_element(*locator)
+        #
+        logger.info(f'Searching for element {locator}')
         e.clear()
         e.send_keys(text)
+        #
+        logger.info(f'Input text {text}')
 
     def wait_for_element_click(self, *locator):
         e = self.wait.until(EC.element_to_be_clickable(locator))

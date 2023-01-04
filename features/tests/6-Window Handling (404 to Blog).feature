@@ -1,4 +1,4 @@
-# Created by ababa at 8/8/2022
+# Created by ababa at 8/8/2021
 Feature: Tests for 404 page
 
   Scenario: User is able to navigate to Amazon blog from 404 page.

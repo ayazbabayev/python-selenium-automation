@@ -43,7 +43,7 @@ class Header(Page):
 
     def verify_esp_option_present(self):
         self.wait_for_element_appear(*self.SPANISH_FLAG)
-        # Below is my contribution, extending with clicking via action chains.
+        # Below extra contribution, extending with clicking via action chains.
         esp_flag = self.find_element(*self.SPANISH_FLAG)
         actions = ActionChains(self.driver)
         actions.click(esp_flag)

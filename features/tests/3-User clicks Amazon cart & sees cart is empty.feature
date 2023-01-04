@@ -1,4 +1,4 @@
-# Created by Ayaz at 7/15/2022
+# Created by Ayaz at 7/15/2021
 Feature: Unlogged user navigates to Amazon cart
 
   Scenario: Unlogged user goes to empty Amazon cart and sees cart is empty

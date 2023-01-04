@@ -24,7 +24,10 @@ def click_through_toplinks_and_verify_pages(context):
         assert link_text in header_text, f'Expected {link_text} but got {header_text}'
 
 
-# top_links = context.driver.find_elements(*TOP_LINKS) # To avoid stale element situation ea. time the page refreshes, we make it to find elements again in this loop
+# top_links = context.driver.find_elements(*TOP_LINKS)
+# To avoid stale element situation
+# ea. time the page refreshes,
+# we make it to find elements again in this loop
 
     # link_text = link_to_click.text
     # link_to_click.click()
